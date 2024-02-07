@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image {
+    flex-basis: calc(25% - 10px); /* Adjust this value as needed to fit 4 images per row */
+    height: 0; /* Use padding to create aspect ratio */
+    padding-top: calc(25% - 10px); /* This creates a square aspect ratio */
+    position: relative; /* Allows absolute positioning of the img within */
+    background-color: #f0f0f0;
+}
+
+.image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the square area */
+}
+
+.image-row .image {
+    transition: transform 0.2s ease; /* Smooth transition for the transform */
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.image.fade-out {
+    animation: fadeOut 1s forwards; /* The 'forwards' keyword ensures the final state (opacity: 0) is retained after the animation completes */
+}

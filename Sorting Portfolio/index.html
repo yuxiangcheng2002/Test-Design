@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Sorter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="buttons">
+        <button onclick="animateDisappearance('0')">0</button>
+        <button onclick="animateDisappearance('1')">1</button>
+        <button onclick="animateDisappearance('2')">2</button>
+        <button onclick="animateDisappearance('3')">3</button>
+        <button onclick="animateDisappearance('4')">4</button>
+    </div>    
+
+<div class="image-container" id="imageContainer">
+    <div class="image" data-tags="1"><img src="image1.jpg" alt="1" /></div>
+    <div class="image" data-tags="3"><img src="image2.jpg" alt="2" /></div>
+    <div class="image" data-tags="4"><img src="image3.jpg" alt="3" /></div>
+    <div class="image" data-tags="4"><img src="image4.jpg" alt="4" /></div>
+    <div class="image" data-tags="1,2"><img src="image5.jpg" alt="5" /></div>
+    <div class="image" data-tags="2,4"><img src="image6.jpg" alt="6" /></div>
+    <div class="image" data-tags="2"><img src="image7.jpg" alt="7" /></div>
+    <div class="image" data-tags="3,4"><img src="image8.jpg" alt="8" /></div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
