@@ -19,10 +19,10 @@ body {
 }
 
 .image {
-    flex-basis: calc(25% - 10px); /* Adjust this value as needed to fit 4 images per row */
-    height: 0; /* Use padding to create aspect ratio */
-    padding-top: calc(25% - 10px); /* This creates a square aspect ratio */
-    position: relative; /* Allows absolute positioning of the img within */
+    flex-basis: calc(25% - 10px); 
+    height: 0;
+    padding-top: calc(25% - 10px); 
+    position: relative; 
     background-color: #f0f0f0;
 }
 
@@ -32,11 +32,11 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the square area */
+    object-fit: cover; 
 }
 
 .image-row .image {
-    transition: transform 0.2s ease; /* Smooth transition for the transform */
+    transition: transform 0.2s ease;
 }
 
 @keyframes fadeOut {
@@ -50,5 +50,5 @@ body {
 }
 
 .image.fade-out {
-    animation: fadeOut 1s forwards; /* The 'forwards' keyword ensures the final state (opacity: 0) is retained after the animation completes */
+    animation: fadeOut 0.5s forwards;
 }
